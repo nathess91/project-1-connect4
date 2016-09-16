@@ -1,0 +1,17 @@
+.gameboard {
+  width: 600px
+}
+
+.row {
+
+}
+
+.box {
+  float: left;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  margin: 1.66%;
+  border: 2px solid black;
+}

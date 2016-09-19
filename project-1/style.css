@@ -1,17 +1,60 @@
-.gameboard {
-  width: 600px
+body {
+  background: yellow;
 }
 
-.row {
+.header {
+  margin-top: 20px;
+  font: 400 45px/1.5 'Schoolbell', cursive;
+  font-weight: bold;
+}
 
+#gameboard {
+  text-align: center;
+}
+
+#board {
+  display: inline-block;
+  margin-top: 2%;
 }
 
 .box {
-  float: left;
-  position: relative;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  margin: 1.66%;
-  border: 2px solid black;
+  width: 150px;
+  height: 150px;
+  border: 5px solid black;
+}
+
+.v {
+  border: 5px solid black;
+}
+
+.h {
+  border: 5px solid black;
+}
+
+.invisible {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+
+table {
+  border: 5px solid black;
+  background-color: #FAFAFA;
+  text-align: center;
+  font: 400 30px/1.5 'Schoolbell', cursive;
+}
+
+p {
+  margin-left:25%;
+  margin-right:25%;
+}
+
+img {
+  width: 120px;
+  height: 50px;
+}
+
+button {
+  margin: 10px;
 }

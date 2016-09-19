@@ -21,64 +21,64 @@ $(document).ready(function(){
   }
 
   function checkWinner(player){
-
+    var board = $("#board");
     // Check if top row match
-     if ($("#board").find("#1").text() !== ""){
-       if ($("#board").find("#1").text() == $("#board").find("#2").text()) {
-         if ($("#board").find("#1").text() == $("#3").text()) {
+     if (board.find("#1").text() !== ""){
+       if (board.find("#1").text() == board.find("#2").text()) {
+         if (board.find("#1").text() == $("#3").text()) {
            winAndReset(player);
          }
       }
     // Check if left column match
-     if ($("#board").find("#1").text() == $("#board").find("#4").text()) {
-      if ($("#board").find("#1").text() == $("#7").text()) {
+     if (board.find("#1").text() == board.find("#4").text()) {
+      if (board.find("#1").text() == $("#7").text()) {
         winAndReset(player);
       }
     }
     // Check if left diagonal match
-    if ($("#board").find("#1").text() == $("#board").find("#5").text()) {
-      if ($("#board").find("#1").text() == $("#9").text()) {
+    if (board.find("#1").text() == board.find("#5").text()) {
+      if (board.find("#1").text() == $("#9").text()) {
         winAndReset(player);
       }
     }
   }
    // Check if middle column match
-   if ($("#board").find("#2").text() !== ""){
-     if ($("#board").find("#2").text() == $("#board").find("#5").text()) {
-       if ($("#board").find("#2").text() == $("#8").text()) {
+   if (board.find("#2").text() !== ""){
+     if (board.find("#2").text() == board.find("#5").text()) {
+       if (board.find("#2").text() == $("#8").text()) {
          winAndReset(player);
        }
      }
    }
 
    // Check if right column match
-   if ($("#board").find("#3").text() !== ""){
-     if ($("#board").find("#3").text() == $("#board").find("#6").text()) {
-       if ($("#board").find("#3").text() == $("#9").text()) {
+   if (board.find("#3").text() !== ""){
+     if (board.find("#3").text() == board.find("#6").text()) {
+       if (board.find("#3").text() == $("#9").text()) {
          winAndReset(player);
        }
      }
     // Check if right diagonal match
-    if ($("#board").find("#3").text() == $("#board").find("#5").text()) {
-      if ($("#board").find("#3").text() == $("#7").text()) {
+    if (board.find("#3").text() == board.find("#5").text()) {
+      if (board.find("#3").text() == $("#7").text()) {
         winAndReset(player);
       }
     }
   }
 
     // Check if middle row match
-    if ($("#board").find("#4").text() !== ""){
-      if ($("#board").find("#4").text() == $("#board").find("#5").text()) {
-        if ($("#board").find("#4").text() == $("#6").text()) {
+    if (board.find("#4").text() !== ""){
+      if (board.find("#4").text() == board.find("#5").text()) {
+        if (board.find("#4").text() == $("#6").text()) {
            winAndReset(player);
         }
       }
     }
 
     // Check if bottom row match
-    if ($("#board").find("#7").text() !== ""){
-      if ($("#board").find("#7").text() == $("#board").find("#8").text()) {
-        if ($("#board").find("#7").text() == $("#9").text()) {
+    if (board.find("#7").text() !== ""){
+      if (board.find("#7").text() == board.find("#8").text()) {
+        if (board.find("#7").text() == $("#9").text()) {
           winAndReset(player);
         }
       }
@@ -89,6 +89,7 @@ $(document).ready(function(){
   // Start new game
   $("#newGame").on("click",function(){
         $(".box").text("");
+        $("#whichplayer").text() = player + "'s " + "turn";
   });
 
 });
